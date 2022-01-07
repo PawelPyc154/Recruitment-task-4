@@ -5,7 +5,7 @@ import { Heading } from './base/heading'
 import { List } from './list'
 import 'twin.macro'
 import { PlaylistItem } from '../models/playlistItem'
-import { PlaylistNoResources } from './playlistNoResources'
+import { NoResources } from './NoResources'
 
 interface PlayListProps {
   list: PlaylistItem[]
@@ -31,7 +31,7 @@ const PlayList = ({ list, playlistFilter, ...props }: PlayListProps) => {
           )}
         ></List>
       ) : (
-        <PlaylistNoResources />
+        <NoResources text="Add your songs :)" />
       )}
     </Card>
   )

@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import { CSSProp } from 'styled-components'
 import 'twin.macro'
 
 interface CardProps {
