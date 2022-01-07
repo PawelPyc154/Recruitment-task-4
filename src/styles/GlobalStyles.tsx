@@ -3,21 +3,21 @@ import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro'
 
 const CustomStyles = createGlobalStyle`
   .light {
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #F1F5F9;
-    --text-primary: #475569;
-    --text-secondary: #1E293B;
-    --color-primary: #E11D48;
+    --bg-primary: #f5f1f1;
+    --bg-secondary: #f1f1f1;
+    /* --text-primary: #475569; */
+    /* --text-secondary: #1E293B; */
+   
   }
   .dark {
-    --bg-primary: #0F172A;
-    --bg-secondary: #1E293B;
-    --text-primary: #CBD5E1;
-    --text-secondary: #FFFFFF;
-    --color-primary: #2563EB;
+    --bg-primary: #303030;
+    --bg-secondary: #424242;
+    /* --text-primary: #CBD5E1; */
+    /* --text-secondary: #FFFFFF; */
+
   }
   body {
-    ${tw`bg-primary text-primary transition-all duration-200`}
+    ${tw`text-white bg-primary`}
   }
 `
 

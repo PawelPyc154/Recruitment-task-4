@@ -8,13 +8,11 @@ const getInitialTheme = () => {
     if (typeof storedPrefs === 'string') {
       return storedPrefs as Modes
     }
-
     const userMedia = window.matchMedia('(prefers-color-scheme: dark)')
     if (userMedia.matches) {
       return 'dark'
     }
   }
-
   return 'dark'
 }
 
@@ -27,6 +25,7 @@ interface ThemeProviderProps {
   initialTheme?: Modes
   children: ReactNode
 }
+
 const ThemeProvider = ({ initialTheme, children }: ThemeProviderProps) => {
   const [theme, setTheme] = React.useState<Modes>(getInitialTheme)
 
