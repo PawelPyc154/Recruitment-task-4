@@ -1,5 +1,5 @@
 import 'twin.macro'
-import { ThemeToggle } from '../styles/themeToggle'
+import { ThemeToggle } from './styles/themeToggle'
 
 const Navigation = () => (
   <div tw="bg-orange flex justify-between items-center py-4 px-8">

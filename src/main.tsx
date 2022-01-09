@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { App } from './app'
-import { GlobalStyles } from './styles/globalStyles'
+import { GlobalStyles } from './components/styles/globalStyles'
 
-import { ThemeProvider } from './styles/themeContext'
+import { ThemeProvider } from './components/styles/themeContext'
 
 const queryClient = new QueryClient({
   defaultOptions: {
