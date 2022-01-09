@@ -5,7 +5,7 @@ import { Heading } from './base/heading'
 import { SearchResultList } from './searchResultList'
 import 'twin.macro'
 import { PlaylistItem } from '../models/playlistItem'
-import { NoResources } from './NoResources'
+import { NoResources } from './noResources'
 
 interface PlayListProps {
   list: PlaylistItem[]

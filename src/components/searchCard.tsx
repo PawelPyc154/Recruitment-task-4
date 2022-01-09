@@ -9,7 +9,7 @@ import { Card } from './base/card'
 import { Input } from './base/input'
 import { SearchResultList } from './searchResultList'
 import 'twin.macro'
-import { NoResources } from './NoResources'
+import { NoResources } from './noResources'
 
 interface SearchCardProps {
   addNewTrack: (element: PlaylistItem) => void
