@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { CSSProp } from 'styled-components'
 import tw from 'twin.macro'
 
-type As = 'h1' | 'h2'
+type Tags = 'h1' | 'h2'
 
 const sizes = {
   sm: tw`text-sm`,
@@ -12,7 +12,7 @@ const sizes = {
 }
 
 interface ComponentProps {
-  tag: As
+  tag: Tags
   children: ReactNode
   className?: string
   css?: CSSProp
@@ -22,7 +22,7 @@ const Component = ({ tag, className, children }: ComponentProps) =>
 
 interface HeadingProps {
   children: ReactNode
-  tag?: As
+  tag?: Tags
   size: keyof typeof sizes
 }
 

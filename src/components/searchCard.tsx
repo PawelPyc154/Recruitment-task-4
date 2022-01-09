@@ -19,11 +19,7 @@ interface SearchCardProps {
 const SearchCard = ({ addNewTrack, playlist }: SearchCardProps) => {
   const [search, setSearch] = useState('')
   const url = 'https://deezerdevs-deezer.p.rapidapi.com/search?q=' + search
-  const {
-    data: list,
-
-    isLoading,
-  } = useQuery({
+  const { data: list, isLoading } = useQuery({
     enabled: !!search,
     queryKey: url,
     queryFn: ({ signal }) => {
