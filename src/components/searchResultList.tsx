@@ -8,7 +8,7 @@ interface ListProps {
   action: (id: PlaylistItem) => ReactNode
 }
 
-const List = ({ list = [], action }: ListProps) => (
+const SearchResultList = ({ list = [], action }: ListProps) => (
   <div tw="divide-y divide-light-gay ">
     {list.map(item => (
       <ListItem key={item.id} {...item}>
@@ -18,4 +18,4 @@ const List = ({ list = [], action }: ListProps) => (
   </div>
 )
 
-export { List }
+export { SearchResultList }

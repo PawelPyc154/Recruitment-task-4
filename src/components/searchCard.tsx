@@ -7,7 +7,7 @@ import { PlaylistItem } from '../models/playlistItem'
 import ButtonIcon from './base/buttonIcon'
 import { Card } from './base/card'
 import { Input } from './base/input'
-import { List } from './list'
+import { SearchResultList } from './searchResultList'
 import 'twin.macro'
 import { NoResources } from './NoResources'
 
@@ -67,7 +67,7 @@ const SearchCard = ({ addNewTrack, playlist }: SearchCardProps) => {
       </header>
 
       {list?.length && search ? (
-        <List
+        <SearchResultList
           list={list}
           action={item => {
             const isSelected = playlist.find(({ id }: any) => item.id === id)

@@ -2,7 +2,7 @@ import { FiTrash } from 'react-icons/fi'
 import ButtonIcon from './base/buttonIcon'
 import { Card } from './base/card'
 import { Heading } from './base/heading'
-import { List } from './list'
+import { SearchResultList } from './searchResultList'
 import 'twin.macro'
 import { PlaylistItem } from '../models/playlistItem'
 import { NoResources } from './NoResources'
@@ -22,14 +22,14 @@ const PlayList = ({ list, playlistFilter, ...props }: PlayListProps) => {
         Your playlist
       </Heading>
       {list.length ? (
-        <List
+        <SearchResultList
           list={list}
           action={item => (
             <ButtonIcon onClick={() => handleRemoveItem(item.id)}>
               <FiTrash />
             </ButtonIcon>
           )}
-        ></List>
+        ></SearchResultList>
       ) : (
         <NoResources text="Add your songs :)" />
       )}
